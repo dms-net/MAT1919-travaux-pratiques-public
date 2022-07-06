@@ -1,0 +1,97 @@
+\documentclass{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+
+\usepackage[margin=1.25in,top=1in]{geometry}
+\usepackage[colorlinks]{hyperref}
+
+\title{MAT1919 - Outils informatiques}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+L'un des buts du cours MAT1919 est de vous fournir les outils informatiques que vous utiliserez tout au long de votre carrière. En tant que chercheur, il n'est pas suffisant que vos programmes fonctionnent correctement. Il est aussi primordial que vos expériences numériques soient facilement accessibles et reproductibles pour vos collègues et l'ensemble de la communauté scientifique. Rappelez vous que votre code informatique fera partie intégrante de vos recherches et qu'une recherche n'est réellement valable que si elle est reproductible!
+
+\section{Installation d'Anaconda}
+
+Anaconda est une application aux utilités multiples. C'est d'abord une distribution du langage de programmation Python, mais aussi un système de gestion de paquets et un système de gestion d'environnements.
+
+Un système de gestion de paquet vous permet d'installer et de désinstaller facilement des librairies. L'application s'occupera elle-même de trouver les dépendances nécessaires pour chaque paquet et de prévenir les incompatibilités potentielles.
+
+Une système de gestion d'environnements, quant à lui, vous permet de créer un espace virtuel isolé nommé «environnement» où vous pouvez avoir certaines librairies ou versions spécifiques de ces librairies qui n'interférera pas avec l'installation globale de votre langage de programmation ou avec les autres environnements. Avoir un système de gestion d'environnements est très important en recherche. D'abord, cela permet de travailler avec d'autres chercheurs en s'assurant que tout les membres de l'équipe peuvent exécuter le code commun et obtenir le même résultat lors de l'exécution. Cela est d'autant plus important si un projet s'échelonne sur plusieurs années. Dans ce cas, le code écris par le passé n'est pas toujours compatible avec les nouvelles versions des librairies. Avoir un environnement dédié à ce projet vous permettra d'utiliser une version antérieure de la librairie lorsque vous travaillez sur celui-ci tout en ayant la version la plus à jour disponible dans d'autres environnements.
+
+Une autre raison importante pour utiliser un système de gestion d'environnements est de permettre de partager votre code avec le reste de la communauté scientifique. Lorsque vous publiez un code dans le cadre d'une recherche, vous devriez toujours inclure une liste des librairies nécessaires pour exécuter le code ainsi que la version des librairies utilisées. Un système de gestion d'environnements vous permettre de facilement exporter et partager votre environnement avec vos lecteurs qui voudraient tester ou expérimenter avec votre code.
+
+Pour installer Anaconda, rendez-vous à l'adresse internet
+
+\noindent \href{https://www.anaconda.com/products/individual}{https://www.anaconda.com/products/individual}
+
+\noindent et téléchargez l'installateur pour votre système d'exploitation.
+
+\section{Configuration d'Anaconda}
+
+Maintenant que vous avez installé Anaconda, nous allons utiliser cette occasion pour vous entraîner à gérer vos environnements. Suivez les instructions suivantes pour créer l'environnement que nous utiliserons pour le cours.
+\begin{enumerate}
+    \item Allez sur studium et téléchargez le fichier nommé environnement\_MAT1919.yaml
+    \item Ouvrez Anaconda Navigator;
+    \item Sélectionnez l'onglet \emph{Environments};
+    \item En bas de la fenêtre, cliquez sur \emph{Import};
+    \item Dans l'explorateur de fichiers, sélectionnez le fichier yaml que vous venez de télécharger;
+    \item Créez l'environnement et attendez qu'Anaconda termine d'installer les librairies.
+\end{enumerate}
+
+Vous devriez maintenant pouvoir sélectionner l'environnement MAT1919 sous l'environnement de base. N'oubliez pas de changer d'environnement lorsque vous ouvrirez Anaconda la prochaine fois.
+
+\section{Utilisation de Jupyter}
+
+Dans ce cours, nous travaillerons principalement sur l'application JupyterLab. Cette application permet de programmer en python dans un environnement graphique intuitif.
+
+Si vous avez bien suivi les instructions de la section précédente, JupyterLab devrait déjà être installé dans votre environnement Anaconda. Assurez-vous que vous avez bien sélectionné l'environnement MAT1919 sous l'onglet \emph{Environements}. Vous pouvez maintenant lancer JupyterLab depuis l'onglet \emph{Home}.
+
+\section{Installation de GitHub Desktop}
+
+Git est un système de gestion de version. Lorsque vous utilisez Git, votre projet est sauvegardé sur un serveur central et chaque collaborateur possède une copie locale. Git permet à plusieurs collaborateurs de travailler indépendemment sur le même projet et d'ensuite facilement intégrer les différentes modifications dans la version globale.
+
+Git permet non seulement de partager votre code avec la communauté scientifique, mais elle permet également de garder un historique de votre travail. Lorsque vous partagez un projet Git, quiconque a accès à ce projet a également accès à l'ensemble de ses versions précédentes. Cela permet une plus grande transparence et l'utilisation de Git est ainsi devenu un étalon-or dans plusieurs domaines scientifiques. Sans oublier que l'accès à d'anciennes versions de votre code peut vous tirer de bien des problèmes en cas de bug d'origine mystérieuse.
+
+Dans ce cours nous utiliserons Git par l'entremise de GitHub. GitHub est un site internet qui permet d'héberger des projets Git. Il offre également un interface graphique d'utilisation facile alors que Git par lui-même fonctionne uniquement en ligne de commande. C'est la façon la plus facile et la plus commune de travailler avec Git. L'application GitHub Desktop est une extension de GitHub qui vous permettra de gérer facilement vos projets GitHub locaux.
+
+Vous trouverez l'installateur pour GitHub Desktop ici:
+
+\noindent \href{https://desktop.github.com}{https://desktop.github.com}
+
+Si ce n'est pas déjà fait, vous devrez également vous créer un compte github à l'adresse
+
+\noindent \href{https://github.com/signup}{https://github.com/signup}
+
+Sachez que GitHub met également à la disposition de ses utilisateurs un site internet personnel. C'est l'endroit idéal pour publier un CV. À titre d'exemple, ma propre page personnelle se trouve ici:
+
+\noindent \href{https://aude-forcione-lambert.github.io}{https://aude-forcione-lambert.github.io}
+
+La création d'un tel site est en dehors du cadre de ce cours mais si cela vous intéresse il existe de nombreux tutoriels et gabarits en ligne.
+
+\section{Utilisation de Git}
+
+Il existe un grand nombre de commandes Git qui permettent de manipuler un projet de toutes les façons possibles. Cependant, seulement quatre commandes sont réellement importantes à connaître pour commencer son utilisation.
+
+\begin{itemize}
+\item Clone: Cette commande vous permet de créer une version locale d'un projet à partir de la version principale sur le serveur central. C'est d'habitude la première étape que vous ferez lorsque vous travaillerez sur un nouveau projet. Dans GitHub Desktop, la commande \emph{clone} se trouve dans le menu \emph{File}.
+\item Pull: Cette commande met à jour votre projet local en important les modifications depuis le serveur. C'est une bonne idée d'exécuter cette commande au début de chaque session de travail et avant chaque \emph{commit}. Dans GitHub Desktop, la commande \emph{pull} se trouve dans le menu \emph{Repository}.
+\item Commit: Cette commande crée une nouvelle version de votre projet. Pour pouvoir exécuter un \emph{commit}, vous devez écrire un résumé des changements effectués. Ce résumé devrait être court et clair. Au besoin, vous pouvez ajouter une description plus détaillée mais ça ne devrait pas être nécessaire dans la plupart des cas. Vous devriez créer un \emph{commit} dès que vous complétez une tâche et votre travail devrait être subdivisée en tâches les plus courtes possibles. Par convention, le message devrait être écrit à l'impératif; une bonne façon de penser au message est qu'il décrit comment la nouvelle version modifie le projet. De bons exemples de messages de \emph{commit} sont: «Ajoute la méthode foo» ou encore «Répare un bug dans la méthode bar». Dans GitHub Desktop, la commande \emph{commit} se trouve en bas à gauche dans la fenêtre principale.
+\item Push: Cette commande permet d'envoyer vos modifications locales au serveur. C'est une bonne idée d'exécuter cette commande après chaque \emph{commit} ou dès que vous avez accès à Internet dans le cas où vous travailleriez hors ligne. Dans GitHub Desktop, la commande \emph{push} se trouve dans le menu \emph{Repository}.
+\end{itemize}
+
+Une session de travail sur un projet Git devrait ressembler à ceci:
+
+\noindent Pull → [Travail sur une tâche → Pull → Commit → Push →]
+
+\noindent et répétez le bloc entre crochets. Si possible terminez votre session de travail avec un \emph{push} mais si vous vous retrouvez coincé et que vous ne pouvez terminer une tâche immédiatement il est préférable d'attendre la prochaine session de travail et la complétion de la tâche avant de créer un nouveau \emph{commit}. Complétez toujours une tâche avant d'en commencer une autre, à moins que vous ne soyez familier avec le principe de branches. Nous vous enseignerons comment créer des branches plus tard dans le cours.
+
+\end{document}
